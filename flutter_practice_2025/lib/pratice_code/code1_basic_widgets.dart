@@ -20,7 +20,8 @@ class BasicWidget extends StatelessWidget {
       ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          // Column : 여러 위젯을 세로 방향으로 배치
+          mainAxisAlignment: MainAxisAlignment.center, // 세로축 정렬(가운데)
           children: <Widget>[
             const Text(
               'Oh Yeah~!',
@@ -37,8 +38,10 @@ class BasicWidget extends StatelessWidget {
               color: Colors.yellow,
             ),
             const SizedBox(height: 30),
+            // ElevatedButton : 클릭 가능한 버튼 위젯
             ElevatedButton(
               onPressed: () {
+                // onPressed : 버튼이 눌렸을 때 실행될 함수
                 print('Flutter 버튼이 클릭되었습니다!');
               },
               style: ElevatedButton.styleFrom(
